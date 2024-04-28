@@ -6,6 +6,12 @@ import { useNavigate } from 'react-router-dom';
 import { serviceRequest } from 'services/operations/authAPI'
 import long from "../../assets/long.jpeg"
 import axios from 'axios';
+import card1board from "../../assets/images-boarding.jpeg";
+import card2feed from "../../assets/image feeding.jpeg";
+import card3groom from "../../assets/grooming.jpeg";
+import card4train from "../../assets/dog-training.jpeg.webp";
+import card5exer from "../../assets/cat-exercising_0.jpg";
+import card6treat from "../../assets/cat-exercising_0.jpg";
 
 const HeaderServices = () => {
 
@@ -71,16 +77,16 @@ const HeaderServices = () => {
   // const [petMedicalHistory, setPetMedicalHistory] = useState('');
 
   const [formData, setFormData] = useState({
-    service: 'Pet-sitter',
-    email: 'harsh.dugar22@spit.ac.in',
-    message: 'fsaf',
-    appointmentDate: '22-09-2021',
-    petName: 'fafd',
-    petType: 'fafa',
-    petBreed: 'fasf', 
-    petSex: 'Male', 
-    petAge: '5', 
-    petMedicalHistory: 'faf',
+    service: '',
+    email: '',
+    message: '',
+    appointmentDate: '',
+    petName: '',
+    petType: '',
+    petBreed: '', 
+    petSex: '', 
+    petAge: '', 
+    petMedicalHistory: '',
   })
 
   // const {service, email, message, appointmentDate, petName, petType, petBreed, petSex, petAge, petMedicalHistory} = formData;
@@ -170,6 +176,9 @@ const HeaderServices = () => {
             
             {/* Service 1 */}
             <div  className="flex flex-col bg-white rounded-2xl shadow-xl">
+
+              <div className='w-full'><img src={card1board} /></div>
+
                 <div className="flex-1 relative pt-16 px-6 pb-8 md:px-8">
                   <div className="absolute top-0 p-5 inline-block bg-indigo-600 rounded-xl shadow-lg transform -translate-y-1/2">
                     <icon className="h-6 w-6 text-white" aria-hidden="true" />
@@ -189,6 +198,9 @@ const HeaderServices = () => {
 
             {/* Service 2 */}
             <div  className="flex flex-col bg-white rounded-2xl shadow-xl">
+
+            <div className='w-full'><img src={card2feed} /></div>
+
                 <div className="flex-1 relative pt-16 px-6 pb-8 md:px-8">
                   <div className="absolute top-0 p-5 inline-block bg-indigo-600 rounded-xl shadow-lg transform -translate-y-1/2">
                     <icon className="h-6 w-6 text-white" aria-hidden="true" />
@@ -205,6 +217,9 @@ const HeaderServices = () => {
 
             {/* Service 3 */}
             <div  className="flex flex-col bg-white rounded-2xl shadow-xl">
+
+            <div className='w-full'><img src={card3groom} /></div>
+
                 <div className="flex-1 relative pt-16 px-6 pb-8 md:px-8">
                   <div className="absolute top-0 p-5 inline-block bg-indigo-600 rounded-xl shadow-lg transform -translate-y-1/2">
                     <icon className="h-6 w-6 text-white" aria-hidden="true" />
@@ -221,6 +236,9 @@ const HeaderServices = () => {
 
             {/* Service 4 */}
             <div  className="flex flex-col bg-white rounded-2xl shadow-xl  mt-[2rem]">
+
+            <div className='w-full'><img src={card4train} /></div>
+
                 <div className="flex-1 relative pt-16 px-6 pb-8 md:px-8">
                   <div className="absolute top-0 p-5 inline-block bg-indigo-600 rounded-xl shadow-lg transform -translate-y-1/2">
                     <icon className="h-6 w-6 text-white" aria-hidden="true" />
@@ -237,6 +255,9 @@ const HeaderServices = () => {
 
             {/* Service 5 */}
             <div  className="flex flex-col bg-white rounded-2xl shadow-xl mt-[2rem]">
+
+            <div className='w-full'><img src={card5exer} /></div>
+
                 <div className="flex-1 relative pt-16 px-6 pb-8 md:px-8">
                   <div className="absolute top-0 p-5 inline-block bg-indigo-600 rounded-xl shadow-lg transform -translate-y-1/2">
                     <icon className="h-6 w-6 text-white" aria-hidden="true" />
@@ -253,6 +274,9 @@ const HeaderServices = () => {
 
             {/* Service 6 */}
             <div  className="flex flex-col bg-white rounded-2xl shadow-xl mt-[2rem]">
+
+            <div className='w-full'><img src={card6treat} /></div>
+
                 <div className="flex-1 relative pt-16 px-6 pb-8 md:px-8">
                   <div className="absolute top-0 p-5 inline-block bg-indigo-600 rounded-xl shadow-lg transform -translate-y-1/2">
                     <icon className="h-6 w-6 text-white" aria-hidden="true" />
@@ -274,57 +298,57 @@ const HeaderServices = () => {
 
         {/* Modal */}
         {isOpen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-gray-200 bg-opacity-75 z-[1000] overflow-auto backdrop-blur-sm">
-        <div className="bg-white p-8 rounded-lg max-w-md w-full">
-          <h5 className="mb-1 text-center text-lg font-medium">Book Appointment</h5>
-          <div>
-            <div className="mb-1">
-              <label htmlFor="serviceInput" className="form-label">Service</label>
-              <input type="text" className="form-control outline-none border border-gray-300 rounded px-3 py-2 w-3/4" name="service" id="serviceInput" value={formData.service} onChange={handleOnChange} required />
+        <div className="fixed inset-0 flex items-center justify-center  bg-opacity-75 z-[1000] overflow-auto backdrop-blur-sm">
+          <div className="p-8 rounded-lg max-w-md w-full bg-[#d8aa96]">
+            <h5 className="mb-1 text-center text-lg font-medium">Book Appointment</h5>
+            <div>
+              <div className="mb-1">
+                <label htmlFor="serviceInput" className="form-label mr-2">Service</label>
+                <input type="text" className="form-control outline-none border border-gray-300 rounded px-3 py-2 w-3/4" name="service" id="serviceInput" value={formData.service} onChange={handleOnChange} required />
+              </div>
+              <div className="mb-1">
+                <label htmlFor="emailInput" className="form-label mr-2">Email address</label>
+                <input type="email" className="form-control outline-none border border-gray-300 rounded px-3 py-2 w-3/4" id="emailInput" name="email" value={formData.email} onChange={handleOnChange} aria-describedby="emailHelp" required />
+                <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div className="mb-1">
+                <label htmlFor="messageInput" className="form-label mr-2">Message</label>
+                <textarea className="form-control outline-none border border-gray-300 rounded px-3 py-2 w-3/4" id="messageInput" name="message" value={formData.message} onChange={handleOnChange} rows="3"></textarea>
+              </div>
+              <div className="mb-1">
+                <label htmlFor="appointmentDateInput" className="form-label mr-2">Appointment Date</label>
+                <input type="date" className="form-control outline-none border border-gray-300 rounded px-3 py-2 w-3/4" id="appointmentDateInput" name="appointmentDate" value={formData.appointmentDate} onChange={handleOnChange} required />
+              </div>
+              <h4 className="mb-1 text-lg font-semibold">Pet Details</h4>
+              <hr className="mb-1" />
+              <div className="mb-1">
+                <label htmlFor="petNameInput" className="form-label mr-2">Pet Name</label>
+                <input type="text" className="form-control outline-none border border-gray-300 rounded px-3 py-2 w-3/4" id="petNameInput" name="petName" value={formData.petName} onChange={handleOnChange} required />
+              </div>
+              <div className="mb-1">
+                <label htmlFor="petTypeInput" className="form-label mr-2">Pet Type</label>
+                <input type="text" className="form-control outline-none border border-gray-300 rounded px-3 py-2 w-3/4" id="petTypeInput" name="petType" value={formData.petType} onChange={handleOnChange} required />
+              </div>
+              <div className="mb-1">
+                <label htmlFor="petBreedInput" className="form-label mr-2">Pet Breed</label>
+                <input type="text" className="form-clear outline-none border border-gray-300 rounded px-3 py-2 w-3/4" id="petBreedInput" name="petBreed" value={formData.petBreed} onChange={handleOnChange} required />
+              </div>
+              <div className="mb-1">
+                <label htmlFor="petSexInput" className="form-label mr-2">Pet Sex</label>
+                <input type="text" className="form-control outline-none border border-gray-300 rounded px-3 py-2 w-3/4" id="petSexInput" name="petSex" value={formData.petSex} onChange={handleOnChange} required />
+              </div>
+              <div className="mb-1">
+                <label htmlFor="petAgeInput" className="form-label mr-2">Pet Age</label>
+                <input type="number" className="form-control outline-none border border-gray-300 rounded px-3 py-2 w-3/4" id="petAgeInput" name="petAge" value={formData.petAge} onChange={handleOnChange} required />
+              </div>
+              <div className="mb-1">
+                <label htmlFor="petMedicalHistoryInput" className="form-label mr-2">Medical History</label>
+                <textarea className="form-control outline-none border border-gray-300 rounded px-3 py-2 w-3/4" id="petMedicalHistoryInput" name="petMedicalHistory" value={formData.petMedicalHistory} onChange={handleOnChange} rows="3"></textarea>
+              </div>
+              <button type="submit" onClick={handleSubmit} className="btn btn-primary w-3/4">Submit Booking</button>
             </div>
-            <div className="mb-1">
-              <label htmlFor="emailInput" className="form-label">Email address</label>
-              <input type="email" className="form-control outline-none border border-gray-300 rounded px-3 py-2 w-3/4" id="emailInput" name="email" value={formData.email} onChange={handleOnChange} aria-describedby="emailHelp" required />
-              <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div className="mb-1">
-              <label htmlFor="messageInput" className="form-label">Message</label>
-              <textarea className="form-control outline-none border border-gray-300 rounded px-3 py-2 w-3/4" id="messageInput" name="message" value={formData.message} onChange={handleOnChange} rows="3"></textarea>
-            </div>
-            <div className="mb-1">
-              <label htmlFor="appointmentDateInput" className="form-label">Appointment Date</label>
-              <input type="date" className="form-control outline-none border border-gray-300 rounded px-3 py-2 w-3/4" id="appointmentDateInput" name="appointmentDate" value={formData.appointmentDate} onChange={handleOnChange} required />
-            </div>
-            <h4 className="mb-1 text-lg font-semibold">Pet Details</h4>
-            <hr className="mb-1" />
-            <div className="mb-1">
-              <label htmlFor="petNameInput" className="form-label">Pet Name</label>
-              <input type="text" className="form-control outline-none border border-gray-300 rounded px-3 py-2 w-3/4" id="petNameInput" name="petName" value={formData.petName} onChange={handleOnChange} required />
-            </div>
-            <div className="mb-1">
-              <label htmlFor="petTypeInput" className="form-label">Pet Type</label>
-              <input type="text" className="form-control outline-none border border-gray-300 rounded px-3 py-2 w-3/4" id="petTypeInput" name="petType" value={formData.petType} onChange={handleOnChange} required />
-            </div>
-            <div className="mb-1">
-              <label htmlFor="petBreedInput" className="form-label">Pet Breed</label>
-              <input type="text" className="form-clear outline-none border border-gray-300 rounded px-3 py-2 w-3/4" id="petBreedInput" name="petBreed" value={formData.petBreed} onChange={handleOnChange} required />
-            </div>
-            <div className="mb-1">
-              <label htmlFor="petSexInput" className="form-label">Pet Sex</label>
-              <input type="text" className="form-control outline-none border border-gray-300 rounded px-3 py-2 w-3/4" id="petSexInput" name="petSex" value={formData.petSex} onChange={handleOnChange} required />
-            </div>
-            <div className="mb-1">
-              <label htmlFor="petAgeInput" className="form-label">Pet Age</label>
-              <input type="number" className="form-control outline-none border border-gray-300 rounded px-3 py-2 w-3/4" id="petAgeInput" name="petAge" value={formData.petAge} onChange={handleOnChange} required />
-            </div>
-            <div className="mb-1">
-              <label htmlFor="petMedicalHistoryInput" className="form-label">Medical History</label>
-              <textarea className="form-control outline-none border border-gray-300 rounded px-3 py-2 w-3/4" id="petMedicalHistoryInput" name="petMedicalHistory" value={formData.petMedicalHistory} onChange={handleOnChange} rows="3"></textarea>
-            </div>
-            <button type="submit" onClick={handleSubmit} className="btn btn-primary w-3/4">Submit Booking</button>
+            <button onClick={closeModal} className="mt-4 w-3/4 text-center text-gray-600 hover:text-gray-900">Close</button>
           </div>
-          <button onClick={closeModal} className="mt-4 w-3/4 text-center text-gray-600 hover:text-gray-900">Close</button>
-        </div>
       </div>
       
       )}

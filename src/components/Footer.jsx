@@ -43,7 +43,7 @@ const navigation = {
  };
 
    return (
-     <footer className="bg-gray-800" aria-labelledby="footer-heading">
+     <footer className="bg-[#807182]" aria-labelledby="footer-heading">
        <h2 id="footer-heading" className="sr-only">
          Footer
        </h2>
@@ -55,12 +55,12 @@ const navigation = {
                src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg"
                alt="Company name"
              />
-             <p className="text-gray-200 text-base">
+             <p className="text-white text-base">
                Making the world a better place through constructing elegant hierarchies.
              </p>
              <div className="flex space-x-6">
                {navigation.social.map((item) => (
-                 <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-200">
+                 <a key={item.name} href={item.href} className="text-white hover:text-white">
                    <span className="sr-only">{item.name}</span>
                    <item.icon className="h-6 w-6" aria-hidden="true" />
                  </a>
@@ -70,11 +70,11 @@ const navigation = {
            <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
              <div className="md:grid md:grid-cols-2 md:gap-8">
                <div>
-                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Solutions</h3>
+                 <h3 className="text-sm font-semibold text-white tracking-wider uppercase">Solutions</h3>
                  <ul role="list" className="mt-4 space-y-4">
                    {navigation.solutions.map((item) => (
                      <li key={item.name}>
-                       <a href={item.href} className="text-base text-gray-200 hover:text-gray-500">
+                       <a href={item.href} className="text-base text-white hover:text-gray-500">
                          {item.name}
                        </a>
                      </li>
@@ -82,11 +82,11 @@ const navigation = {
                  </ul>
                </div>
                <div className="mt-12 md:mt-0">
-                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Support</h3>
+                 <h3 className="text-sm font-semibold text-white tracking-wider uppercase">Support</h3>
                  <ul role="list" className="mt-4 space-y-4">
                    {navigation.support.map((item) => (
                      <li key={item.name}>
-                       <a href={item.href} className="text-base text-gray-200 hover:text-gray-500">
+                       <a href={item.href} className="text-base text-white hover:text-gray-500">
                          {item.name}
                        </a>
                      </li>
@@ -96,11 +96,11 @@ const navigation = {
              </div>
              <div className="md:grid md:grid-cols-2 md:gap-8">
                <div>
-                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
+                 <h3 className="text-sm font-semibold text-white tracking-wider uppercase">Company</h3>
                  <ul role="list" className="mt-4 space-y-4">
                    {navigation.company.map((item) => (
                      <li key={item.name}>
-                       <a href={item.href} className="text-base text-gray-200 hover:text-gray-500">
+                       <a href={item.href} className="text-base text-white hover:text-gray-500">
                          {item.name}
                        </a>
                      </li>
@@ -108,11 +108,11 @@ const navigation = {
                  </ul>
                </div>
                <div className="mt-12 md:mt-0">
-                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Legal</h3>
+                 <h3 className="text-sm font-semibold text-white tracking-wider uppercase">Legal</h3>
                  <ul role="list" className="mt-4 space-y-4">
                    {navigation.legal.map((item) => (
                      <li key={item.name}>
-                       <a href={item.href} className="text-base text-gray-200 hover:text-gray-500">
+                       <a href={item.href} className="text-base text-white hover:text-gray-500">
                          {item.name}
                        </a>
                      </li>
@@ -123,7 +123,7 @@ const navigation = {
            </div>
          </div>
          <div className="mt-12 border-t border-gray-200 pt-8">
-           <p className="text-base text-gray-400 xl:text-center">&copy; 2020 Workflow, Inc. All rights reserved.</p>
+           <p className="text-base text-white xl:text-center">&copy; 2020 Workflow, Inc. All rights reserved.</p>
          </div>
        </div>
      </footer>

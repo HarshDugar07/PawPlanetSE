@@ -45,11 +45,10 @@ const NavbarTW = () => {
                </div>
                <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                   
-                  <div className="flex-shrink-0 flex items-center">
-                     <a><div className='flex'>
-                    <img className="block lg:hidden h-8 w-auto" src={logo} alt="Workflow" />
-                    <img className="hidden lg:block h-8 w-auto" src={logo} alt="Workflow" />
-                    <div className="ml-2 text-lg font-semibold text-gray-800">Pawpals</div></div></a>
+               <div className='flex items-center'>
+                  <img className="block lg:hidden h-16 w-auto" src={logo} alt="Workflow" />
+                  <img className="hidden lg:block h-16 w-auto" src={logo} alt="Workflow" />
+                  <div className="ml-2 text-lg font-semibold text-gray-800">Pawpals</div>
                   </div>
 
                  
